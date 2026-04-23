@@ -5,7 +5,7 @@ export const siteConfig = {
   accentColor: "#eb9234",
   social: {
     email: "mail@raphaelbon.net",
-    linkedin: "https://linkedin.com/in/RaphBonnet",
+    linkedin: "https://linkedin.com/in/Raph-Bonnet",
     github: "https://github.com/RaphaelBonnet",
   },
   aboutMe:
