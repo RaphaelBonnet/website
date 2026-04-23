@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raphael Bonnet | Portfolio</title>
+    <style>
+        /* Clean, modern CSS */
+        :root { 
+            --primary: #0f4c81; /* A professional navy blue */
+            --bg: #f8fafc; 
+            --text: #334155; 
+            --accent: #e2e8f0;
+        }
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            line-height: 1.6; 
+            color: var(--text); 
+            background: var(--bg); 
+            margin: 0; 
+            padding: 0; 
+        }
+        header { 
+            background: #ffffff; 
+            padding: 1rem 0; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+        }
+        nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 2.5rem; 
+        }
+        nav a { 
+            text-decoration: none; 
+            color: var(--text); 
+            font-weight: 600; 
+            transition: color 0.2s ease-in-out; 
+        }
+        nav a:hover { color: var(--primary); }
+        
+        section { 
+            max-width: 850px; 
+            margin: 2rem auto; 
+            padding: 2.5rem; 
+            background: #ffffff; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
+        }
+        h1, h2, h3 { color: var(--primary); margin-top: 0; }
+        
+        /* Hero Section */
+        .hero { 
+            text-align: center; 
+            padding: 5rem 2rem; 
+            background: linear-gradient(135deg, var(--primary), #1e3a8a); 
+            color: #ffffff; 
+            border-radius: 0; 
+            margin-top: 0; 
+        }
+        .hero h1 { color: #ffffff; margin-bottom: 0.5rem; font-size: 2.5rem; }
+        .hero p { font-size: 1.15rem; margin-bottom: 1rem; color: #e2e8f0; }
+        .hero a { color: #ffffff; text-decoration: underline; text-underline-offset: 4px; }
+        
+        /* Badges */
+        .badge { 
+            display: inline-block; 
+            background: var(--accent); 
+            color: var(--primary); 
+            padding: 0.35rem 0.85rem; 
+            border-radius: 999px; 
+            font-size: 0.85rem; 
+            font-weight: 600;
+            margin: 0.25rem; 
+        }
+        
+        /* Cards */
+        .card { 
+            border-left: 4px solid var(--primary); 
+            padding-left: 1.5rem; 
+            margin-bottom: 2rem; 
+            background: #fafaf9;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .card p { margin: 0.5rem 0; }
+        
+        /* Placeholders */
+        .placeholder { 
+            color: #d97706; 
+            font-style: italic; 
+            background: #fef3c7;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.9rem; }
+        
+        /* Interactivity for Experience */
+        .collapsible { 
+            cursor: pointer; 
+            user-select: none; 
+            display: flex;
+            align-items: center;
+            transition: color 0.2s;
+        }
+        .collapsible:hover { color: #1e3a8a; }
+        .content { 
+            display: none; 
+            margin-top: 15px; 
+            animation: fadein 0.3s;
+        }
+        .active { display: block; }
+        @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Raphael Bonnet [cite: 1]</h1>
+        <p>Computer Science MEng Student @ University of Southampton [cite: 13, 15]</p>
+        <p>Aspiring Product Manager | Software Engineer | RAF Pilot</p>
+        <p>
+            <a href="mailto:raphb123@gmail.com">raphb123@gmail.com [cite: 4]</a> | 
+            <a href="https://www.linkedin.com/in/raph-bonnet/" target="_blank">LinkedIn [cite: 4]</a> | 
+            <a href="https://raphaelbon.net">raphaelbon.net</a>
+        </p>
+    </section>
+
+    <section id="about">
+        <h2>About Me [cite: 5]</h2>
+        <p>I'm a hardworking and responsible individual with a passion for problem solving and a keen eye for detail[cite: 6]. I work well both individually and as a team, and can be entrusted with positions of leadership and relied upon to be organised, innovative and driven[cite: 7].</p>
+        <p>I am highly interested in the Software & Finance fields, with a particular fascination for software engineering and technical product management[cite: 9].</p>
+        <p class="placeholder">[PLACEHOLDER: Add 2-3 sentences tying your technical background to your aviation ambitions. Explain how your discipline from the Royal Navy URNU and RAFAC influences your approach to tech and leadership.]</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience [cite: 27]</h2>
+        <p><em>Click on a role to expand details.</em></p>
+        
+        <div class="card">
+            <h3 class="collapsible">▶ Software Developer Intern // IBM [cite: 31, 32]</h3>
+            <div class="content">
+                <p><strong>Jun-Oct 2025 [cite: 27] | Technology Campus Dublin, IE [cite: 32]</strong></p>
+                <ul>
+                    <li>DevSecOps role in the automation team for IBM's API Connect Product[cite: 33].</li>
+                    <li>Developed new automations for the CI/CD processes using Tekton, OnePipeline & Jenkins[cite: 34].</li>
+                    <li>Redesigned and optimized CI pipelines by translating Groovy code into performant Bash scripts, reducing complexity and improving maintainability[cite: 35].</li>
+                    <li>Shadowed product managers to discover the Technical PM job function and contribute to their on-going projects[cite: 36].</li>
+                </ul>
+                <p class="placeholder">[PLACEHOLDER: If you have a quantitative metric—such as reducing pipeline execution time by X minutes—add it to the bullet points above.]</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="collapsible">▶ Product Manager // Ministry of Defence Hackathon [cite: 42, 43]</h3>
+            <div class="content">
+                <p><strong>September 2023 [cite: 29]</strong></p>
+                <ul>
+                    <li>Managed an agile functioning team of 10 consisting of technical and non-technical roles through a 48 hour hackathon to provide a software solution to one of the MOD's problem sets[cite: 44].</li>
+                    <li>Produced the product vision, technical documentation and UI prototype design in Figma for the front-end developers[cite: 47].</li>
+                    <li>Worked in the Microsoft cloud environment utilizing Azure AI Bot, Cognitive Search, and Document Summarization[cite: 45].</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="collapsible">▶ Deputy Senior Midshipman (VP) // Royal Navy - URNU Solent [cite: 38]</h3>
+            <div class="content">
+                <p><strong>2022-2025 [cite: 28]</strong></p>
+                <ul>
+                    <li>Responsible for operational unit administration and promulgating the weekly orders[cite: 40].</li>
+                    <li>Planned and hosted large scale social events including an alumni reunion dinner aboard HMS Warrior attended by 240 guests[cite: 39].</li>
+                </ul>
+                <p class="placeholder">[PLACEHOLDER: You also have fantastic leadership experience as Lead Instructor at CodeCampUK and as a RAFAC Pilot Officer. You can duplicate the HTML blocks above to include those if you want to emphasize management and teaching!]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects [cite: 17]</h2>
+        
+        <div class="card">
+            <h3>Masters Project: Digital Twin Platform for UAV Swarms to Extinguish Wildfires [cite: 24]</h3>
+            <p>Hyper-modular python platform for real-time UAV Swarm command and simulation[cite: 25].</p>
+            <p class="placeholder">[PLACEHOLDER: Add a link to the GitHub repository, or embed a screenshot/demo video of the UAV Swarm simulation here.]</p>
+        </div>
+
+        <div class="card">
+            <h3>Bachelors Project: Interpreting the detection of AI generated imagery [cite: 23]</h3>
+            <p>Created a tool with tuned XAI Models to score 'fakeness' of a given real or synthetic image using Explainable AI[cite: 23].</p>
+            <p class="placeholder">[PLACEHOLDER: Mention the specific XAI models or libraries (e.g., PyTorch, SHAP) you used to build this.]</p>
+        </div>
+        
+        <p class="placeholder">[PLACEHOLDER: You listed several other impressive projects like the Trading Intelligent Agent and Runway Redeclaration Software. Consider adding brief 1-sentence summaries for the ones you are most proud of here.]</p>
+    </section>
+
+    <section id="education">
+        <h2>Education [cite: 10]</h2>
+        <div class="card">
+            <h3>University of Southampton [cite: 13]</h3>
+            <p><strong>2022-2026 [cite: 11]</strong></p>
+            <p>Computer Science MEng: Attaining a 1st Class [cite: 15]</p>
+            <p class="placeholder">[PLACEHOLDER: Mention 2-3 key modules relevant to Software Engineering or Product Management that you excelled in.]</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills & Proficiencies [cite: 56]</h2>
+        <div style="margin-top: 1rem;">
+            <span class="badge">Python [cite: 58]</span> 
+            <span class="badge">Java [cite: 58]</span> 
+            <span class="badge">Bash [cite: 58]</span> 
+            <span class="badge">C / C++ [cite: 58]</span> 
+            <span class="badge">JavaScript [cite: 58]</span> 
+            <span class="badge">SQL [cite: 58]</span> 
+            <span class="badge">Azure & AWS Cloud [cite: 59]</span>
+            <span class="badge">Bilingual French [cite: 57]</span>
+        </div>
+        
+        <h3 style="margin-top: 2rem;">Key Awards [cite: 60]</h3>
+        <ul>
+            <li>URNU Solent Most Outstanding OC 2024 [cite: 65]</li>
+            <li>Sutton Grammar Leadership Cup [cite: 64]</li>
+            <li>Bebras Elite Challenge - Distinction [cite: 67]</li>
+            <li>ICAEW BASE & IET BBC Microbit Competition Finalist [cite: 68, 69]</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Raphael Bonnet. Hosted via GitHub Pages.</p>
+    </footer>
+
+    <script>
+        // JavaScript for handling the collapsible experience sections
+        document.querySelectorAll('.collapsible').forEach(item => {
+            item.addEventListener('click', event => {
+                const target = event.currentTarget;
+                const content = target.nextElementSibling;
+                content.classList.toggle('active');
+                
+                // Toggle the arrow icon direction
+                if (content.classList.contains('active')) {
+                    target.innerHTML = target.innerHTML.replace('▶', '▼');
+                } else {
+                    target.innerHTML = target.innerHTML.replace('▼', '▶');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
