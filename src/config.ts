@@ -9,8 +9,8 @@ export const siteConfig = {
     github: "https://github.com/RaphaelBonnet",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I’m a hardworking and responsible individual with a passion for problem solving and a keen eye for detail. I work well both individually and as a team, and can be entrusted with positions of leadership and relied upon to be organised, innovative and driven. I’m always looking for ways to learn new things, improve myself and support those around me, and I work well under pressure. I'm interested in the Software & Finance fields; especially fascinated by software engineering and technical product management.",
+  skills: ["Bilingual French", "Java","Python","C++","C","Bash","Groovy","Haskell (Functional Programming)","JavaScript","React", "Node.js","SQL","XML","Azure", "AWS", "Docker","Linux","Microsoft Office Suite","Google Workspace","Adobe Creative Tools"],
   projects: [
     {
       name: "AI Dev Roundup Newsletter",
